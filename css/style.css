@@ -7,6 +7,11 @@ footer{
     flex-direction: column;
 }
 
+.foto{
+    width: 20%;
+    height: 20%;
+}
+
 footer{
     flex-direction: row;
 }
