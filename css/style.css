@@ -1,0 +1,17 @@
+header,
+main,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+footer{
+    flex-direction: row;
+}
+
+.location{
+    padding: 0 20px;
+}
+
