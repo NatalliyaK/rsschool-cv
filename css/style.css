@@ -1,0 +1,22 @@
+header,
+main,
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.foto{
+    width: 20%;
+    height: 20%;
+}
+
+footer{
+    flex-direction: row;
+}
+
+.location{
+    padding: 0 20px;
+}
+
