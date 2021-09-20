@@ -2,76 +2,137 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+        <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 <body>
-<header>
-    <figure>
-        <p><img src="img/photo_2021-07-17_17-57-34.jpg" alt="" class="foto"></p>
-    </figure>
-    <h1>Natallia Kantseliarchyk</h1>
-    <h2>Frontend developer</h2>
-</header>
-<main>
-    <section>
-        <h3>Contact information:</h3>
+<div class ="content">
+    <header>
+        <div class="image list">
+            <figure>
+                <p><img class="photo" src="img/photo_2021-07-17_17-57-34.jpg" alt="фото"></p>
+                <figcaption class="figcaption"><h2>Frontend developer</h2></figcaption>
+            </figure>
+        </div>
+        <div class="name">
+            <h1>Natallia Kantseliarchyk</h1>
+        </div>
+        <nav class="nav-menu">
             <ul>
-                <li>Phone: +375447801536</li>
-                <li> E-mail: natakancelarchyk@gmail.com</li>
-                <li>Linkedin: https://www.linkedin.com/in/natallia-kantseliarchyk/</li>
+                <li><a href="#information" class="scrollto">Contact</a></li>
+                <li><a href="#skills" class="scrollto">Skills</a></li>
+                <li><a href="#edukation" class="scrollto">Edukation</a></li>
+                <li><a href="#about" class="scrollto">About me</a></li>
+                <li><a href="#example" class="scrollto">Example of My Code</a></li>
+                <li><a href="#additional" class="scrollto">Additional education</a></li>
+                <li><a href="#work" class="scrollto">Work experience</a></li>
             </ul>
-    </section>
-    <section>
-        <h3>About me</h3>
-            <p> I’ve been working as a doctor in a children's hospital for 11 years. My duties included diagnosis and medical
-                inspection. I have finished front-end development courses in IT Academy this year. Becoming a front-end
-                developer is my dream. It’s very interesting to create something new and see the result of your work. I like to
-                improve my knowledge in front-end development every day.
-            </p>
-    </section>
-    <section>
-        <h3>Skills</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JS</li>
-            <li>Git</li>
-            <li>English: Pre-Intermediate</li>
-            <li>Latin: Read, translate (medical)</li>
-        </ul>
-    </section>
-    <section>
-        <h3>Edukation</h3>
-            <p>Vitebsk State Medical University / Specialization: Therapy<br>
-                09/2004 - 06/2010
-            </p>
-    </section>
-    <section>
-        <h3>Additional education</h3>
-        <ul>
-            <li>IT Academy (JavaScript Web Application Development) / trainee</li>
-            <li>02/2021 - 07/2021</li>
-            <li>Final score at the end of the course – 9</li>
-            <li>Developed a training project on JavaScript - weather forecast</li>
-            <li>Сertificate</li>
-            <li>IT Academy (HTML, CSS, JavaScript course - website development training) / trainee</li>
-            <li>12/2020 - 02/2021</li>
-            <li>Final score at the end of the course – 9</li>
-            <li>Developed a training project on HTML, CSS - Photographers website</li>
-            <li>Сertificate</li>
-            <li>GeekBrains (course «Introduction to Web Design») / trainee</li>
-            <li>01/2017 - 01/2017</li>
-            <li>Final score at the end of the course – 10</li>
-            <li>Сertificate</li>
-        </ul>
-    </section>
-</main>
-<footer>
-    <span><a href="https://github.com/NatalliyaK" title="Github">Github</a></span>
-    <span class="location">Минск 2021</span>
-    <span><a href="https://rs.school/js/" title="rs.school">rs.school</a></span>
-</footer>
+        </nav>
+        <div class="menu-wrap"></div>
+    </header>
+    <main>
+        <aside class="list">
+            <div class="aside-left">
+                <section id="information">
+                    <h3>Contact information:</h3>
+                        <ul>
+                            <li>Phone: <a href="tel:+375447801536">+375447801536</a></li>
+                            <li>E-mail: <a href="mailto:natakancelarchyk@gmail.com">natakancelarchyk@gmail.com</a></li>
+                            <li>Linkedin: <a href="https://www.linkedin.com/in/natallia-kantseliarchyk/"><br>Наталья Канцелярчик</a></li>
+                        </ul>
+                </section>
+                <section id="skills">
+                    <h3>Skills</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Git</li>
+                        <li>English: Pre-Intermediate</li>
+                        <li>Latin: Read, translate (medical)</li>
+                    </ul>
+                </section>
+                <section id="edukation">
+                    <h3>Edukation</h3>
+                    <p>Vitebsk State Medical University / Specialization: Therapy<br>
+                        09/2004 - 06/2010
+                    </p>
+                </section>
+            </div>
+        </aside>
+        <div>
+            <section id="about">
+                <h3>About me</h3>
+                    <p> I have finished front-end development courses in IT Academy this year. Becoming a front-end
+                        developer is my dream. It’s very interesting to create something new and see the result of your work. I like to
+                        improve my knowledge in front-end development every day.
+                    </p>
+            </section>
+            <section id="example">
+                <h3>Example of My Code</h3>
+                    <pre class="example">
+                        <code class="javascript">
+function explode(s) {
+    let numArr = s.split(''),
+        repeatedNumber = numArr.map(function(item) {
+            return item.repeat(item);
+    });
 
+    return repeatedNumber.join('');
+}
+
+explode('102269');
+                        </code>
+                    </pre>
+            </section>
+            <section id="additional">
+                <h3>Additional education</h3>
+                <ul>
+                    <li>IT Academy (JavaScript Web Application Development) / trainee</li>
+                    <li>02/2021 - 07/2021</li>
+                    <li>Developed a training project on JavaScript - weather forecast</li>
+                    <li>Сertificate</li>
+                    <li>IT Academy (HTML, CSS, JavaScript course - website development training) / trainee</li>
+                    <li>12/2020 - 02/2021</li>
+                    <li>Developed a training project on HTML, CSS - Photographers website</li>
+                    <li>Сertificate</li>
+                    <li>GeekBrains (course «Introduction to Web Design») / trainee</li>
+                    <li>01/2017 - 01/2017</li>
+                    <li>Сertificate</li>
+                </ul>
+            </section>
+            <section id="work">
+                <h3>Work experience</h3>
+                    <ul>
+                        <li>Trainee IT Academy:</li>
+                        <li>JavaScript Web Application Development course:<br>
+                            Main task of course project: creare web site with modern JavaScript and API;<br>
+                            Technologies: JavaScript (ES6), Google Maps API, Open Weather Map API, HTML5, CSS3<br>
+                            <a href="https://github.com/NatalliyaK/Weather_forecast" target="_blank">https://github.com/NatalliyaK/Weather_forecast</a>
+                        </li>
+                        <li>HTML, CSS, JavaScript course<br>
+                            Main task of course project: create five pages web site with HTML, CSS, JavaScript<br>
+                            Technologies: HTML5, CSS3, JavaScript (ES5), jQuery<br>
+                            <a href="https://github.com/NatalliyaK/Photographers" target="_blank">https://github.com/NatalliyaK/Photographers</a>
+                        </li>
+                    </ul>
+            </section>
+        </div>
+    </main>
+</div>
+<footer class="footer">
+        <div class="img"><img src="img/rs_school_js.svg" alt="rsschol logo" width="100"></div>
+        <div class="link"><a href="https://github.com/NatalliyaK"><img src="img/free-icon-github-logo-25231.svg" alt="Github" width="40"></a></div>
+        <div class="location">Минск 2021</div>
+        <div class="link"><a href="https://rs.school/js/" title="rs.school">rs.school</a></div>
+</footer>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/jquery.slicknav.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
